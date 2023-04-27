@@ -5,6 +5,13 @@
         <div>
             <h1>{{$project->title}}</h1>
             <p>({{$project->slug}})</p>
+            <p>
+                @if($project->type)
+                    <strong>
+                        Tipologia:{{$project->type->name}}
+                    </strong> 
+                @endif   
+            </p>
         </div>
 
         <div>
